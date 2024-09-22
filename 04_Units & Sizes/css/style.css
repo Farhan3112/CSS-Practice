@@ -1,0 +1,81 @@
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
+
+/* css reset ->to get rid of default margin and padding thats taking exta space */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 16px is dafault in any browser, The only Absolute value that you will commonly use is px (pixels) */
+/* p{
+    font-size: 32px;
+} */
+ /* html{
+    font-size: 16px;
+ } */
+
+ /* Percentage values are always relative to another quantity. For example, an element's length is relative to its parent element's length */
+ /* header{
+    width:  80%;
+ } */
+
+  h1{
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+  }
+
+
+  /* we shouldnt put font size on root of the element */
+  /* rem is relative to the font size of the root element. 1rem is default(2rem = 32px) */
+  /* paragraph will not change as of main because it is not relative to main element, its relative to root */
+  /* main{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 2rem;
+  } */
+  
+
+  /* em is relative to the font size of this element, or the font size of the parent element when used for font-size */
+  /* here 2em = 2rem*2(32*2px) = 64px */
+  /* main{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 2em;
+  } */
+
+
+  /* use rem on font-size and em on margin/padding */
+  /* not more than 40 characters per line before it wraps */
+  /* main{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 2rem;
+    width: 40ch;
+  } */
+
+/* % is better choice sometimes than using vw and vh */
+/* because it will create a horizontal bar  */
+    /* body{
+    width: 100%;
+  } */
+  main{
+    /* width: 50vw;
+    background-color: skyblue; */
+    font-size: 2rem;
+  }
+  p{
+    font-size: 2rem;
+    width: 40ch;
+  }
+
+  /* body only grows with the content, but sometimes we want a body element to be the full height of the page even we dont have enough content , we can do taht with vh unit , it will still allow the body to outgrow with the content*/
+body{
+    min-height: 100vh;
+}

@@ -1,0 +1,38 @@
+/* https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    /* text-decoration: underline; */
+    /* text-decoration: none; */
+    /* cursor: not-allowed; */
+    /* cursor: pointer; */
+    /* color: blue; */
+
+    color: hsl(207, 44%, 49%);
+}
+
+/* visited pseudo class has more specificity than just anchor element */
+/* Pseudo class(represent current state of element */
+/* put all these in correct order like this(a, visited, hover, active */
+a:visited{
+    color: purple;
+}
+a:hover, a:focus{
+    /* color: dodgerblue; */
+
+    /* 0.8 here in hsl is transparency */
+    color: hsl(207 , 44%, 49%, 0.8);
+    /* opacity: 0.8; */
+    background-color: gold;
+}
+a:active{
+    color: red;
+}

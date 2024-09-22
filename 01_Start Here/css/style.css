@@ -1,0 +1,8 @@
+/* https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
+/* https://jigsaw.w3.org/css-validator/ */
+
+/* CSS Rule Set */
+p{
+  font-size: 64px;
+  color: purple;  
+}

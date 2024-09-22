@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5% 10%;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+ol {
+    /* list-style-type: lower-alpha; */
+    /* list-style-type: georgian; */
+    /* list-style-type: decimal; */
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-type: disc; */
+    /* list-style-type: circle; */
+    /* list-style-type: upper-roman; */
+    /* list-style-type: none; */
+    list-style-type: lower-alpha;
+
+    /* to remove default indentation */
+    padding: 0;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    /* list-style-position: outside; */
+
+    color: #00f;
+
+    line-height: 1.6;
+    /* ".." ->to get out of the css folder */
+    /* list-style-image: url("../images/checkmark.png"); */
+
+    /* short hand for list-style-type, list-style-image, list-style-position ; */
+    /* list-style: square url("../images/checkmark.png") inside; */
+}
+
+
+/* li {
+    color: red;
+} */
+
+/* ul li{
+    color: red;
+} */
+
+/* can put even or odd here also */
+ul li:nth-child(2){
+    color: red;
+}
+
+
+/* Pseudo Element */
+/* marker-> for bullet or order list or number */
+ul ::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+
+    /* can also put svg, icons here in contect */
+    content: "Only $5 >> ";
+}

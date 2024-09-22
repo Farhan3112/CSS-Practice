@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* body,main, p are block level elements(create new line, stack on top each other) */
+/* block element takes 100% width if they are not inside of something that are limiting it */
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+/* main {
+    background-color: aqua;
+    width: 50%;
+} */
+
+/* to block level element we can apply margin,padding or height or anything related to that */
+p {
+    background-color: lightgrey;
+    /* margin: 100px 50px; */
+}
+
+/* this is span (inline element->do not create new line, do not stack on top each other), we cant directly apply margin,height to it */
+/* inline element only takes width of its content */
+.opposite{
+    /* inline-block ->stayed in inline didnt create a new line but can apply properties of block elements, handy when to turn a link into button,style links as buttons, turning list into row instead of column */
+    display: inline-block;
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px;
+    height: 200px;
+    padding: 4rem;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    /* display: none; */
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: right;
+    background-color: #000;
+    margin: 0;
+}
+li{
+    /* display: none; */
+    display: inline-block;
+    /* margin-inline ->only left and right */
+    margin-inline: 0.5rem;
+}
+li a{
+    color: #fff;
+    text-decoration: none;
+}
+li a:hover, li a:focus {
+    text-decoration: underline;
+}

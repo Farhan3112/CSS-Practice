@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.block{
+    width: 30vw;
+    height: 30vh;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+/* float use to float things in left ro right and we can wrap text around it, we can apply float in a container but remember to use displat:flow-root to the container */
+.left{
+    float: left;
+}
+
+/* float is not in the nomral flow ,so the margin applied from the left is applied from the entire left not from the left of the paragraph, it will work on .left only */
+/* p{
+    margin-left: 20px;
+} */
+.left{
+    float: left;
+    margin-right: 1rem;
+}
+.right{
+    float: right;
+    margin-left: 1rem;
+}
+
+/* second paragraph doesnt start until after 1st div, let 2nd paragraph start after 1st para and 1st div,but it will have a problem if it is inside a container */
+.clear{
+    clear: both;
+}
+
+section {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+/* if there are less no. of texts in 1st para then .left div(float) will overflow to fix this we can use overflow: auto however the correct way is display: flow-root  */
+    /* overflow: auto; */
+    display: flow-root;
+}

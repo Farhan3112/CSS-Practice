@@ -1,0 +1,47 @@
+/* to get unicode of symbols */
+/* https://symbl.cc/en/0022/ */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/white-space */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.columns{
+    /* column-count: 4;
+    column-width: 250px; */
+    /* shorthand, column-count and column-width */
+    columns: 4 250px;
+    column-rule: 3px solid #333;
+    column-gap: 3rem;
+}
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    /* to avoid breaking, from being splitting  */
+    break-inside: avoid;
+    /* to put top at the 2nd column, but dont use because it forces to be more than 1 column */
+    /* break-before: column; */
+}
+
+.columns .quote {
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+}
+
+.nowrap {
+    /* so that the text will no break */
+    white-space: nowrap;
+}

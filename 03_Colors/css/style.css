@@ -1,0 +1,23 @@
+/* https://coolors.co/contrast-checker/112a46-acc8e5 */
+/* https://webaim.org/resources/contrastchecker/ */
+
+
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    /* shorthand for background-color */
+    background: #ffedd5;
+    /* font color */
+    /* color: darkblue; */
+    color: rgb(0, 0, 0);
+}
+/* p{
+    color: rgba(0, 0, 0,0.5);
+} */
+/* p{
+    color: #808080;
+} */
+p{
+    color: #333;
+}
